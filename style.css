@@ -4,6 +4,13 @@
 			text-align: center;
 			font-family: revert;
 		}
+			.photo {
+    display: block;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+			}
+
 		    .popup {
       display: inline-block;
       cursor: pointer;
@@ -296,3 +303,99 @@
 .resume-block a:hover {
   text-decoration: underline;
 }
+/* Contact Page Section */
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+        .contact-info {
+            width: 40%;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info strong {
+            min-width: 80px; /* Ensures uniform spacing */
+            display: inline-block;
+        }
+        .contact-info a {
+            color: rebeccapurple;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+        .contact-info a:hover {
+            background-color: #ccc;
+        }
+        .contact-form {
+            width: 50%;
+        }
+        form table {
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: whitesmoke;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: green;
+        }
+/* Thinglink Section */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery-section {
+        max-width: 900px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .gallery-section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .model-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .description {
+        text-align: center;
+        color: #666;
+    }
+
+    iframe {
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 800px;
+        height: 500px;
+    }
