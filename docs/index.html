@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<h2 class="myName">Douglas J. Nesselhauf Jr.</h2>
+ 
+<div id="banner">
+  <div id="menu">
+    <h1 class="myName">Menu</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="virtualshelf.html">Virtual Shelf</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<section class="gallery-section">
+<div class="model-container">
+<h1>Link to My Other Website</h1>
+<div class="description">
+<p>To view my other website developed on WordPress, visit: <a href="https://sites.psu.edu/25djn5410/" target="_blank">Doug Nesselhauf's ePortfolio</a></p>
+</div></div>
+</section>
+
+</head>
+
+<body>
+<section class="gallery-section">
+<div class="model-container">
+<h1>Autobiography</h1> 
+<div class="description">
+<div class="p"><p>Hi, my name is Doug Nesselhauf, and I’m currently in my junior year here at Behrend. I am dual majoring in Management Information Systems and Project and Supply Chain Management. My goal for college is to find a company that is good to me and where I have room to grow. I am a motivated, goal-oriented, well-rounded individual who gets along with others, learns quickly, and prioritizes multiple tasks. I am currently involved in several organizations that promote community involvement and student wellness, causes I am passionate about. </p></div>
+
+<figure>
+<img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/headshot.jpg" alt="Doug Nesselhauf Headshot" width="400" height="400">
+</figure>
+
+</div></div>
+</section>
+
+
+
+
+
+<section class="gallery-section">
+<div class="model-container">
+<h1>Hobbies</h1>
+<div class="p"><p>I find immense joy and fulfillment in spending time with my family and friends in my free time. Whether hanging out at home, going out for food, or a day of adventure, these moments create memories I will always hold close to me. 
+One of my favorite things to do is play sports, not only to stay active but also to build bonds with people who share their passion for sports. 
+My next hobby is riding my dirtbike, snowmobile, and four-wheelers. As my parents have a good majority of property, I always find myself in the woods on some type of machine. 
+When I’m indoors, I enjoy playing video games like Call of Duty, Minecraft, Rocket League and MX vs. ATV Reflex. Regarding TV, I enjoy watching cartoons like Family Guy, Simpsons, and South Park. Also, I religiously follow the NFL, watching live games at every opportunity.
+ </p></div></div>
+
+ <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/snowmobilefield.jpg" alt="Snowmobile in Snowy Field" width="600" height="400">
+      <div class="caption">Snowmobile in Snowy Field</div>
+    </div>
+    
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/snowmobiledark.jpg" alt="Snowmobile at Night" width="600" height="400">
+      <div class="caption">Snowmobile at Night</div>
+    </div>
+    
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/snowmobilegarage.jpg" alt="Snowmobile Garage" width="600" height="400">
+      <div class="caption">Snowmobile Garage</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/dirtbikegarage.jpg" alt="Dirtbike Garage" width="600" height="400">
+      <div class="caption">Dirtbike Garage</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/rmzgarage.jpg" alt="Dirtbike Garage" width="600" height="400">
+      <div class="caption">Dirtbike Garage</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/littledougdirtbike.jpg" alt="Little Doug on Dirtbike" width="600" height="400">
+      <div class="caption">Little Doug on Dirtbike</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/refs/heads/main/docs/images/fourwheeler.jpg" alt="Fourwheeler in Snow" width="600" height="400">
+      <div class="caption">Fourwheeler in Snow</div>
+    </div>
+
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); 
+}
+
+function changeSlide(n) {
+  slideIndex += n - 1;
+  showSlides();
+}
+</script>
+
+<h2>Education</h2>
+	<div id="toe"><h4>Table of Education</h4>
+<table border="2">
+	<tr class = "topRowChart"> 
+		<td><b>Levels of Education</b></td>
+		<td><b> Place of Education</b></td>
+	</tr>
+	<tr>
+		<td> Primary School </td>
+		<td> Fairview School District</td>
+	</tr>
+	<tr>
+		<td> Secondary School </td>
+		<td> Penn State Behrend </td>
+	</tr>
+</table> 
+
+</body>
+</html>
