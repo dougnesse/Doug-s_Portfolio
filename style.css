@@ -347,10 +347,12 @@
     }
 
     .model-container {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 20px;
+}
+
 
     .description {
         text-align: center;
