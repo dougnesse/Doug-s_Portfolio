@@ -5,31 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text Analysis Using Voyant and AntConc</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    .side-by-side {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .side-by-side img {
-      max-width: 48%;
-      height: auto;
-    }
-    .comparison-blocks {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .comparison-block {
-      flex: 1 1 45%;
-      border: 1px solid #ccc;
-      padding: 20px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-      background-color: #f9f9f9;
-    }
-  </style>
+
 </head>
 <body>
   <h2 class="myName">Douglas J. Nesselhauf Jr.</h2>
@@ -64,24 +40,90 @@
       <div class="comparison-block">
         <h2>Joe Biden Analysis</h2>
         <div class="description">
-          <p>In Biden's address, frequent phrases like "my whole soul" and "we must" reflect a focus on unity, shared responsibility, and moral resolution. His cirrus cloud and frequency graph show recurring terms such as <strong>america</strong>, <strong>nation</strong>, <strong>people</strong>, and <strong>democracy</strong>.</p>
+          <p>In Biden's address, frequent phrases like "my whole soul" and "we must" reflect a focus on unity, shared responsibility, and moral resolution. His cirrus cloud and frequency graph show recurring terms such as <strong>America</strong>, <strong>people</strong>, <strong>we're</strong>, and <strong>going</strong>.</p>
           <div class="side-by-side">
-            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden_antconc_1gram.jpg" alt="Biden AntConc 1-Gram">
-            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden_antconc_3gram.jpg" alt="Biden AntConc 3-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden3gram.png" alt="Biden AntConc 3-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden4gram.png" alt="Biden AntConc 4-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden3gramkwik.png" alt="Biden 3-Gram Kwik">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden4gramkwik.png" alt="Biden 4-Gram Kwik">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/bidencirrus.png" alt="Biden Cirrus">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/bidengraph.png" alt="Biden Graph">
           </div>
-          <img class="photo" src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden_voyant.jpg" alt="Biden Voyant Visualization">
         </div>
       </div>
-
       <div class="comparison-block">
         <h2>Donald Trump Analysis</h2>
         <div class="description">
-          <p>Trump's speech focuses more on national strength, industry, and promises of action. Common phrases include "we will bring" and "make America," revealing an action-oriented tone. His most used terms include <strong>america</strong>, <strong>people</strong>, and <strong>country</strong>.</p>
+          <p>Trump's speech focuses more on national strength, industry, and promises of action. Common phrases include "the United States" and "the American people," revealing a collective tone. His most used terms include <strong>America</strong>, <strong>people</strong>, and <strong>American</strong>.</p>
           <div class="side-by-side">
-            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump_antconc_1gram.jpg" alt="Trump AntConc 1-Gram">
-            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump_antconc.jpg" alt="Trump AntConc 3-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump3gram.png" alt="Trump 3-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump4gram.png" alt="Trump 4-Gram">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump3gramkwik.png" alt="Trump 3-Gram Kwik">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump4gramkwik.png" alt="Trump 4-Gram Kwik">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trumpcirrus.png" alt="Trump Cirrus">
+            <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trumpgraph.png" alt="Trump Graph">
           </div>
-          <img class="photo" src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump_voyant.jpg" alt="Trump Voyant Visualization">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery-section pres-comparison">
+    <div class="comparison-block">
+      <h2>Presidential Speech Comparison</h2>
+      <div class="description">
+        <p>Side-by-side comparisons of Biden vs. Trump across 3-gram, 4-gram, and cirrus visualizations.</p>
+      </div>
+
+      <div class="side-by-side">
+        <div>
+          <h3>Biden 3-Gram</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden3gramkwik.png" alt="Biden 3-Gram KWIK">
+          <div class="description">
+          <p>The phrase “in the world” is often used by Biden to compare the U.S. with other countries, whether talking about education, healthcare, or infrastructure. It shows how he looks at issues by looking at America's global standing, often pointing out where the U.S. excels or where it’s fallen behind.</p>
+          </div>
+        </div>
+        <div>
+          <h3>Trump 3-Gram</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump3gramkwik.png" alt="Trump 3-Gram KWIK">
+          <div class="description">
+          <p>Trump uses “the United States” to emphasize power, leadership, and action, highlighting military strength, economic deals, and global diplomacy. The phrase is used when stating national accomplishments or shifts in policy, showing dominant view of the country.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-by-side">
+        <div>
+          <h3>Biden 4-Gram</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/biden4gram.png" alt="Biden 4-Gram">
+          <div class="description">
+          <p>This list shows Biden frequently using hopeful and forward-looking phrases like “we’re going to” and “and so much more,” which suggest a message of optimism. Phrases like “the American jobs plan” and “pay their fair share” highlight his focus on policy and fairness.</p>
+          </div>
+        </div>
+        <div>
+          <h3>Trump 4-Gram</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trump4gram.png" alt="Trump 4-Gram">
+          <div class="description">
+          <p>Trump's most common phrases include “thank you very much” and “men and women of,” which reflect a formal and inclusive speaking style. There’s also a strong national focus, with repeated mentions of “the United States” and “first lady,” emphasizing patriotism and tradition.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-by-side">
+        <div>
+          <h3>Biden Cirrus</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/bidencirrus.png" alt="Biden Cirrus">
+          <div class="description">
+          <p>Biden’s word cloud shows a focus on people, progress, and unity. Words like “we’re,” “going,” and “Americans” suggest he’s talking about moving forward together and tackling big issues as a country.</p>
+          </div>
+        </div>
+        <div>
+          <h3>Trump Cirrus</h3>
+          <img src="https://raw.githubusercontent.com/dougnesse/Doug-s_Portfolio/main/docs/images/trumpcirrus.png" alt="Trump Cirrus">
+          <div class="description">
+          <p>Trump’s word cloud highlights pride in America and a strong focus on the nation. Words like “American,” “country,” and “tonight” suggest he’s emphasizing patriotism and speaking directly to the moment.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -91,7 +133,7 @@
     <div class="model-container">
       <h2>Post-Analysis Observations</h2>
       <div class="description">
-        <p>From this comparison, Biden’s language is built on unity, moral duty, and healing a divided nation. While Trump leans into revival and dominance. The visualizations help highlight their different verbal strategies and underlying values.</p>
+        <p>Biden’s language focuses on unity, progress, and how the U.S. compares to the rest of the world. He often talks about what “we” can do together and highlights issues like jobs, health care, and fairness. Trump’s language centers more on strength, pride, and national identity. He uses “the United States” to emphasize leadership and action. Both highlight America, but Biden looks forward with a focus on teamwork, while Trump stresses power and patriotism.</p>
       </div>
     </div>
   </section>

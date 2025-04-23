@@ -10,6 +10,13 @@
     top: 50%;
     left: 50%;
       }
+    /* Scale up the entire Presidential Comparison section */
+        .pres-comparison {
+      zoom: 1.07;
+      }
+        .gallery-section {
+      zoom: 1.07;    
+        }
 
     }
     @keyframes fadeIn {
@@ -35,14 +42,12 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   margin-bottom: 200px;
-  align: center;
 }
 
 .menu {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  align: center;
 }
 #menu h1.myName {
   margin: 0;
@@ -129,7 +134,6 @@
       text-indent: 150px;
       font-size: 20px;
       color: #2c3e50;
-      text-align: center;
     } 
     h4 { 
       text-align: center;
@@ -406,4 +410,45 @@
       display: inline-block;
       margin: 0 15px;
     }
-    
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .side-by-side img {
+      max-width: 49%;
+      height: auto;
+      display: block;
+    }
+    .comparison-blocks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .comparison-block {
+      flex: 1 1 45%;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      background-color: #f9f9f9;
+    }
+
+    .pres-comparison .side-by-side {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .pres-comparison .side-by-side > div {
+      flex: 1 1 calc(50% - 20px);
+      text-align: center;
+    }
+    .pres-comparison .side-by-side img {
+      width: 100% !important;
+      max-width: none !important;
+      height: auto;
+      display: block;
+    }
+  </style>
