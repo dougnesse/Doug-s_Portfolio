@@ -368,7 +368,7 @@
 
 
     .description {
-        text-align: center;
+        text-align: left;
         color: #7f8c8d;
     }
 
@@ -421,6 +421,35 @@
       height: auto;
       display: block;
     }
+
+    /* ==========================================================================
+   Map‐Section Overrides
+   ========================================================================== */
+
+.map-section {
+  max-width: 820px;        /* limit entire section width */
+  margin: 0 auto 40px;     /* center & add bottom spacing */
+  padding: 0 10px;         /* optional side padding */
+}
+
+.map-section .side-by-side {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.map-section figure {
+  margin: 0 auto 20px;     /* center the figure & space below */
+  max-width: 100%;
+}
+
+.map-section img.photo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;         /* never overflow its container */
+  height: auto;
+}
+
     .comparison-blocks {
       display: flex;
       flex-wrap: wrap;
@@ -451,4 +480,9 @@
       height: auto;
       display: block;
     }
+    
+  p {
+    text-indent: 2em;
+  }
+
   </style>
